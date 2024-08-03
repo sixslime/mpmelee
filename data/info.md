@@ -16,7 +16,7 @@ false
 - perhaps reduce crit damage from 150% -> 140%|130%
     * (detect when player is falling then reduce their attack damage)
 
-### Weapons
+### Melee
 - Sword : "Area/Crowd Control"
     * the bread and butter basic for most use cases
     * dont change much except reduce attack speed and damage a little
@@ -34,3 +34,9 @@ false
     * very high damage
     * very low attack speed
     * -20% range
+
+### Ranged
+- Bow :
+    * Reduce arrow speed, make spread larger (enchantments can fix this)
+- Crossbow :
+    * Remove crit from arrows
