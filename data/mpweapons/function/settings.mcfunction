@@ -46,4 +46,36 @@ data modify storage mpweapons:settings items append value {item:"minecraft:iron_
 data modify storage mpweapons:settings items[-1].stats set value {damage:5.0, knockback:0,attack_speed_modifier:-0.7, range_modifier:-0}
 data modify storage mpweapons:settings items append value {item:"minecraft:iron_shovel"}
 data modify storage mpweapons:settings items[-1].stats set value {damage:4.0, knockback:0.8,attack_speed_modifier:-0.74, range_modifier:0.1}
+data modify storage mpweapons:settings items append value {item:"minecraft:trident"}
+data modify storage mpweapons:settings items[-1].stats set value {damage:6.0, knockback:0,attack_speed_modifier:-0.67, range_modifier:0.35}
+#>-------------------
+
+#>-------------------
+#> bow.enable : bool
+#-------------------
+#~ enable custom behavior of arrows shot by bows.
+#-------------------
+#- 
+#-------------------
+ data modify storage mpweapons:settings bow.enable set value true
+#>-------------------
+
+#>-------------------
+#> bow.spread : {angle:{min: float, max: float}, magnitude:{min: float, max: float}}
+#-------------------
+#~ random spread of shot arrows (added to minecraft's vanilla spread)
+#-------------------
+#- 
+#-------------------
+ data modify storage mpweapons:settings bow.enable set value true
+#>-------------------
+
+#>-------------------
+#> crossbow.enable : bool
+#-------------------
+#~ enable custom behavior of arrows shot by crossbows.
+#-------------------
+#- 
+#-------------------
+ data modify storage mpweapons:settings crossbow.enable set value true
 #>-------------------

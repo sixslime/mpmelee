@@ -19,6 +19,8 @@ execute unless data storage mpweapons:settings {PERSIST:true} run function mpwea
 # scoreboards
 scoreboard objectives add -mpweapons dummy
 scoreboard objectives add --mpweapons dummy
+scoreboard objectives add _mpweapons-use_bow minecraft.used:minecraft.bow
+scoreboard objectives add _mpweapons-use_crossbow minecraft.used:minecraft.crossbow
 #scoreboard objectives add mpweapons-scoreboard dummy
 
 # cache

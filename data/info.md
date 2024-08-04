@@ -1,5 +1,6 @@
 # Dependencies
 * xtem
+* six
 
 # Implements
 
@@ -46,3 +47,4 @@ false
     * mid-high damage
     * +30% range
     * mid attack speed
+    * make ranged attack conistent with melee damage

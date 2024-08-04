@@ -12,7 +12,7 @@ data modify storage mpweapons:var register.attributes[-1].amount set from storag
 data modify storage mpweapons:var register.attributes append value {type:"minecraft:player.entity_interaction_range", operation:"add_multiplied_base"}
 data modify storage mpweapons:var register.attributes[-1].amount set from storage mpweapons:var register.target_item.stats.range_modifier
 
-data modify storage mpweapons:var register.attributes[].id set value "mpweapons:stats"
+data modify storage mpweapons:var register.attributes[].id set value "mpweapons:stat"
 data modify storage mpweapons:var register.attributes[].slot set value "mainhand"
 
 data modify storage mpweapons:var register.item.components."minecraft:attribute_modifiers".modifiers append from storage mpweapons:var register.attributes[]
