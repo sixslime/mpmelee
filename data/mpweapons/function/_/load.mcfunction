@@ -21,6 +21,9 @@ scoreboard objectives add -mpweapons dummy
 scoreboard objectives add --mpweapons dummy
 #scoreboard objectives add mpweapons-scoreboard dummy
 
+# cache
+function mpweapons:_/cache/generate
+
 # tick
 schedule clear mpweapons:_/tick
 function mpweapons:_/tick
