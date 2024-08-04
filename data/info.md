@@ -36,7 +36,13 @@ false
     * -20% range
 
 ### Ranged
-- Bow :
+- Bow : 
     * Reduce arrow speed, make spread larger (enchantments can fix this)
 - Crossbow :
     * Remove crit from arrows
+
+### Special
+- Trident : 
+    * mid-high damage
+    * +30% range
+    * mid attack speed

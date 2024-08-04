@@ -21,7 +21,7 @@ data modify storage mpweapons:settings PERSIST set value false
 # ~ stats:
 #   * damage: increase of attack damage when using this weapon.
 #       - adds onto the player's base attack damage, which is default 1.0.
-#       - ex: setting this value to 5.0 would make this weapon's damage 6.0.
+#       - ex: setting this value to 5.0 would make this weapon's damage 6.0.#
 #   * knockback: increase of attack knockback when using this weapon.
 #       - adds onto the player's base attack knockback, which is default 0.
 #       - can technically be a negative value, but this will only make any difference if the player's base attack knockback is above 0, which by default it is not (a player with a negative attack knockback is equivelant to 0).
@@ -41,7 +41,7 @@ data modify storage mpweapons:settings items[-1].stats set value {damage:3.0, kn
 data modify storage mpweapons:settings items append value {item:"minecraft:iron_axe"}
 data modify storage mpweapons:settings items[-1].stats set value {damage:6.0, knockback:0,attack_speed_modifier:-0.78, range_modifier:0}
 data modify storage mpweapons:settings items append value {item:"minecraft:iron_pickaxe"}
-data modify storage mpweapons:settings items[-1].stats set value {damage:8.0, knockback:0,attack_speed_modifier:-0.86, range_modifier:-0.2}
+data modify storage mpweapons:settings items[-1].stats set value {damage:8.0, knockback:0,attack_speed_modifier:-0.85, range_modifier:-0.2}
 data modify storage mpweapons:settings items append value {item:"minecraft:iron_sword"}
 data modify storage mpweapons:settings items[-1].stats set value {damage:5.0, knockback:0,attack_speed_modifier:-0.7, range_modifier:-0}
 data modify storage mpweapons:settings items append value {item:"minecraft:iron_shovel"}
