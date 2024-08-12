@@ -36,16 +36,16 @@ data modify storage mpweapons:settings PERSIST set value false
 # - 
 #-------------------
 data modify storage mpweapons:settings items set value []
+data modify storage mpweapons:settings items append value {item:"minecraft:iron_sword"}
+data modify storage mpweapons:settings items[-1].stats set value {damage:5, knockback:0,attack_speed_modifier:-0.625, range_modifier:-0}
+data modify storage mpweapons:settings items append value {item:"minecraft:iron_axe"}
+data modify storage mpweapons:settings items[-1].stats set value {damage:8.0, knockback:0,attack_speed_modifier:-0.775, range_modifier:0}
 data modify storage mpweapons:settings items append value {item:"minecraft:iron_hoe"}
 data modify storage mpweapons:settings items[-1].stats set value {damage:3.0, knockback:0, attack_speed_modifier:-0.5, range_modifier:0}
-data modify storage mpweapons:settings items append value {item:"minecraft:iron_axe"}
-data modify storage mpweapons:settings items[-1].stats set value {damage:6.0, knockback:0,attack_speed_modifier:-0.78, range_modifier:0}
 data modify storage mpweapons:settings items append value {item:"minecraft:iron_pickaxe"}
-data modify storage mpweapons:settings items[-1].stats set value {damage:8.0, knockback:0,attack_speed_modifier:-0.85, range_modifier:-0.2}
-data modify storage mpweapons:settings items append value {item:"minecraft:iron_sword"}
-data modify storage mpweapons:settings items[-1].stats set value {damage:5.0, knockback:0,attack_speed_modifier:-0.7, range_modifier:-0}
+data modify storage mpweapons:settings items[-1].stats set value {damage:8.0, knockback:0,attack_speed_modifier:-0.65, range_modifier:-0.24}
 data modify storage mpweapons:settings items append value {item:"minecraft:iron_shovel"}
-data modify storage mpweapons:settings items[-1].stats set value {damage:4.0, knockback:0.8,attack_speed_modifier:-0.74, range_modifier:0.1}
+data modify storage mpweapons:settings items[-1].stats set value {damage:4.0, knockback:0,attack_speed_modifier:-0.65, range_modifier:0.2}
 data modify storage mpweapons:settings items append value {item:"minecraft:trident"}
 data modify storage mpweapons:settings items[-1].stats set value {damage:6.0, knockback:0,attack_speed_modifier:-0.67, range_modifier:0.35}
 #>-------------------
