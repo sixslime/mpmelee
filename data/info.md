@@ -11,6 +11,9 @@ false
 
 # TODO
 
+# SNAPSHOT
+- convert all attribute ids
+
 ### Crits
 - Reduce Attack Speed by 50% when airborne (not on ground). This makes crits still useful but not just objectively better.
 - This may feel cheugy though because the players attack indicator is incosistent when on/off ground.
