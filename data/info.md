@@ -10,6 +10,8 @@
 false
 
 # TODO
+- perhaps instead of bows having flashy enchantments, make arrows the medium for cool effects (perhaps via enchantments on the arrows, because apparently that works)
+- make use of the fletching table???
 
 # SNAPSHOT
 - convert all attribute ids
