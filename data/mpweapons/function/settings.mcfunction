@@ -11,7 +11,7 @@ data modify storage mpweapons:settings PERSIST set value false
 #- these modifiers are intended for rebalancing critical hits.
 #-------------------
  data modify storage mpweapons:settings airborne_modifiers set value []
- data modify storage mpweapons:settings airborne_modifiers append value {type:"minecraft:generic.attack_speed", amount:-0.5, operation:"add_multiplied_total"}
+ data modify storage mpweapons:settings airborne_modifiers append value {type:"minecraft:generic.attack_speed", amount:-0.45, operation:"add_multiplied_total"}
 #>-------------------
 
 #>-------------------
@@ -36,18 +36,78 @@ data modify storage mpweapons:settings PERSIST set value false
 # - 
 #-------------------
 data modify storage mpweapons:settings items set value []
+
+
+data modify storage mpweapons:settings items append value {item:"minecraft:wooden_sword"}
+data modify storage mpweapons:settings items[-1].stats set value {damage:2.0, knockback:0,attack_speed_modifier:-0.62, range_modifier:0}
+data modify storage mpweapons:settings items append value {item:"minecraft:stone_sword"}
+data modify storage mpweapons:settings items[-1].stats set value {damage:3.0, knockback:0,attack_speed_modifier:-0.635, range_modifier:0}
 data modify storage mpweapons:settings items append value {item:"minecraft:iron_sword"}
-data modify storage mpweapons:settings items[-1].stats set value {damage:5, knockback:0,attack_speed_modifier:-0.625, range_modifier:-0}
+data modify storage mpweapons:settings items[-1].stats set value {damage:4.0, knockback:0,attack_speed_modifier:-0.65, range_modifier:0}
+data modify storage mpweapons:settings items append value {item:"minecraft:diamond_sword"}
+data modify storage mpweapons:settings items[-1].stats set value {damage:5.0, knockback:0,attack_speed_modifier:-0.665, range_modifier:0}
+data modify storage mpweapons:settings items append value {item:"minecraft:netherite_sword"}
+data modify storage mpweapons:settings items[-1].stats set value {damage:6.0, knockback:0,attack_speed_modifier:-0.68, range_modifier:0}
+data modify storage mpweapons:settings items append value {item:"minecraft:golden_sword"}
+data modify storage mpweapons:settings items[-1].stats set value {damage:4.5, knockback:0.5,attack_speed_modifier:-0.71, range_modifier:0}
+
+data modify storage mpweapons:settings items append value {item:"minecraft:wooden_axe"}
+data modify storage mpweapons:settings items[-1].stats set value {damage:4.0, knockback:0,attack_speed_modifier:-0.755, range_modifier:0}
+data modify storage mpweapons:settings items append value {item:"minecraft:stone_axe"}
+data modify storage mpweapons:settings items[-1].stats set value {damage:5.0, knockback:0,attack_speed_modifier:-0.765, range_modifier:0}
 data modify storage mpweapons:settings items append value {item:"minecraft:iron_axe"}
-data modify storage mpweapons:settings items[-1].stats set value {damage:8.0, knockback:0,attack_speed_modifier:-0.775, range_modifier:0}
+data modify storage mpweapons:settings items[-1].stats set value {damage:6.0, knockback:0,attack_speed_modifier:-0.775, range_modifier:0}
+data modify storage mpweapons:settings items append value {item:"minecraft:diamond_axe"}
+data modify storage mpweapons:settings items[-1].stats set value {damage:7.0, knockback:0,attack_speed_modifier:-0.785, range_modifier:0}
+data modify storage mpweapons:settings items append value {item:"minecraft:netherite_axe"}
+data modify storage mpweapons:settings items[-1].stats set value {damage:8.0, knockback:0,attack_speed_modifier:-0.795, range_modifier:0}
+data modify storage mpweapons:settings items append value {item:"minecraft:golden_axe"}
+data modify storage mpweapons:settings items[-1].stats set value {damage:6.5, knockback:0.5,attack_speed_modifier:-0.815, range_modifier:0}
+
+data modify storage mpweapons:settings items append value {item:"minecraft:wooden_hoe"}
+data modify storage mpweapons:settings items[-1].stats set value {damage:1.5, knockback:0, attack_speed_modifier:-0.49, range_modifier:0}
+data modify storage mpweapons:settings items append value {item:"minecraft:stone_hoe"}
+data modify storage mpweapons:settings items[-1].stats set value {damage:2.5, knockback:0, attack_speed_modifier:-0.5, range_modifier:0}
 data modify storage mpweapons:settings items append value {item:"minecraft:iron_hoe"}
-data modify storage mpweapons:settings items[-1].stats set value {damage:3.0, knockback:0, attack_speed_modifier:-0.5, range_modifier:0}
+data modify storage mpweapons:settings items[-1].stats set value {damage:3.5, knockback:0, attack_speed_modifier:-0.51, range_modifier:0}
+data modify storage mpweapons:settings items append value {item:"minecraft:diamond_hoe"}
+data modify storage mpweapons:settings items[-1].stats set value {damage:4.5, knockback:0, attack_speed_modifier:-0.52, range_modifier:0}
+data modify storage mpweapons:settings items append value {item:"minecraft:netherite_hoe"}
+data modify storage mpweapons:settings items[-1].stats set value {damage:5.5, knockback:0, attack_speed_modifier:-0.53, range_modifier:0}
+data modify storage mpweapons:settings items append value {item:"minecraft:golden_hoe"}
+data modify storage mpweapons:settings items[-1].stats set value {damage:4.0, knockback:0.5, attack_speed_modifier:-0.55, range_modifier:0}
+
+data modify storage mpweapons:settings items append value {item:"minecraft:wooden_pickaxe"}
+data modify storage mpweapons:settings items[-1].stats set value {damage:6.0, knockback:0,attack_speed_modifier:-0.8, range_modifier:-0.34}
+data modify storage mpweapons:settings items append value {item:"minecraft:stone_pickaxe"}
+data modify storage mpweapons:settings items[-1].stats set value {damage:7.0, knockback:0,attack_speed_modifier:-0.81, range_modifier:-0.32}
 data modify storage mpweapons:settings items append value {item:"minecraft:iron_pickaxe"}
-data modify storage mpweapons:settings items[-1].stats set value {damage:8.0, knockback:0,attack_speed_modifier:-0.65, range_modifier:-0.24}
+data modify storage mpweapons:settings items[-1].stats set value {damage:8.0, knockback:0,attack_speed_modifier:-0.82, range_modifier:-0.3}
+data modify storage mpweapons:settings items append value {item:"minecraft:diamond_pickaxe"}
+data modify storage mpweapons:settings items[-1].stats set value {damage:9.0, knockback:0,attack_speed_modifier:-0.83, range_modifier:-0.28}
+data modify storage mpweapons:settings items append value {item:"minecraft:netherite_pickaxe"}
+data modify storage mpweapons:settings items[-1].stats set value {damage:10.0, knockback:0,attack_speed_modifier:-0.84, range_modifier:-0.26}
+data modify storage mpweapons:settings items append value {item:"minecraft:golden_pickaxe"}
+data modify storage mpweapons:settings items[-1].stats set value {damage:8.5, knockback:0.5,attack_speed_modifier:-0.86, range_modifier:-0.29}
+
+data modify storage mpweapons:settings items append value {item:"minecraft:wooden_shovel"}
+data modify storage mpweapons:settings items[-1].stats set value {damage:2.0, knockback:0,attack_speed_modifier:-0.67, range_modifier:0.2}
+data modify storage mpweapons:settings items append value {item:"minecraft:stone_shovel"}
+data modify storage mpweapons:settings items[-1].stats set value {damage:3.0, knockback:0,attack_speed_modifier:-0.68, range_modifier:0.215}
 data modify storage mpweapons:settings items append value {item:"minecraft:iron_shovel"}
-data modify storage mpweapons:settings items[-1].stats set value {damage:4.0, knockback:0,attack_speed_modifier:-0.65, range_modifier:0.2}
+data modify storage mpweapons:settings items[-1].stats set value {damage:4.0, knockback:0,attack_speed_modifier:-0.69, range_modifier:0.23}
+data modify storage mpweapons:settings items append value {item:"minecraft:diamond_shovel"}
+data modify storage mpweapons:settings items[-1].stats set value {damage:5.0, knockback:0,attack_speed_modifier:-0.7, range_modifier:0.245}
+data modify storage mpweapons:settings items append value {item:"minecraft:netherite_shovel"}
+data modify storage mpweapons:settings items[-1].stats set value {damage:6.0, knockback:0,attack_speed_modifier:-0.71, range_modifier:0.26}
+data modify storage mpweapons:settings items append value {item:"minecraft:golden_shovel"}
+data modify storage mpweapons:settings items[-1].stats set value {damage:4.5, knockback:0.5,attack_speed_modifier:-0.73, range_modifier:0.24}
+
+
 data modify storage mpweapons:settings items append value {item:"minecraft:trident"}
-data modify storage mpweapons:settings items[-1].stats set value {damage:6.0, knockback:0,attack_speed_modifier:-0.67, range_modifier:0.35}
+data modify storage mpweapons:settings items[-1].stats set value {damage:5.5, knockback:0,attack_speed_modifier:-0.65, range_modifier:0.4}
+data modify storage mpweapons:settings items append value {item:"minecraft:mace"}
+data modify storage mpweapons:settings items[-1].stats set value {damage:12.5, knockback:1,attack_speed_modifier:-0.92, range_modifier:-0.2}
 #>-------------------
 
 #>-------------------
