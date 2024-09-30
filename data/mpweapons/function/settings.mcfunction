@@ -11,7 +11,7 @@ data modify storage mpweapons:settings PERSIST set value false
 #- these modifiers are intended for rebalancing critical hits.
 #-------------------
  data modify storage mpweapons:settings airborne_modifiers set value []
- data modify storage mpweapons:settings airborne_modifiers append value {type:"minecraft:generic.attack_speed", amount:-0.45, operation:"add_multiplied_total"}
+ data modify storage mpweapons:settings airborne_modifiers append value {type:"minecraft:attack_speed", amount:-0.45, operation:"add_multiplied_total"}
 #>-------------------
 
 #>-------------------
