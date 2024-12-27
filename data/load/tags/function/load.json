@@ -1,5 +1,6 @@
 {
     "values": [
+        "#six:load",
         "#mpweapons:load"
     ]
 }
