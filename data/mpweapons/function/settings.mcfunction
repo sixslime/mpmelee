@@ -31,9 +31,6 @@ data modify storage mpweapons:settings PERSIST set value false
 #   * range_modifier: percent increase/decrease of attack range when using the weapon.
 #       - default attack range is 3.0.
 #       - ex: setting this value to 0.1 would make the weapon's attack range 3.3.
-#   
-#-------------------
-# - 
 #-------------------
 data modify storage mpweapons:settings items set value []
 
@@ -110,17 +107,17 @@ data modify storage mpweapons:settings items[-1].stats set value {damage:12.5, k
 #>-------------------
 
 #>-------------------
-#> bow.enable : bool
+#> bow.enable
+#: bool
 #-------------------
 #~ enable custom behavior of arrows shot by bows.
-#-------------------
-#- 
 #-------------------
  data modify storage mpweapons:settings bow.enable set value true
 #>-------------------
 
 #>-------------------
-#> bow.spread : {radius:{min: float, max: float}, magnitude:{min: float, max: float}}
+#> bow.spread
+#: {radius:{min: float, max: float}, magnitude:{min: float, max: float}}
 #-------------------
 #~ random spread of shot arrows (added ontop of minecraft's vanilla arrow trajectory)
 #~ <radius> is how many blocks the arrow can deviate from it's original target at 50 blocks.
@@ -128,13 +125,12 @@ data modify storage mpweapons:settings items[-1].stats set value {damage:12.5, k
 #~ <magnitude> is the min/max change in motion in the direction the arrow is travelling, i.e. the random variation of the speed of the arrow.
 #   * this is measured in blocks/sec (units of `Motion` tag).
 #-------------------
-#- 
-#-------------------
  data modify storage mpweapons:settings bow.spread set value {radius:{min:0.5, max:3.5}, magnitude:{min:-0.1, max:0.2}}
 #>-------------------
 
 #>-------------------
-#> bow.can_crit : bool
+#> bow.can_crit
+#: bool
 #-------------------
 #~ arrows shot from bows crit when fully charged.
 #-------------------
@@ -144,21 +140,19 @@ data modify storage mpweapons:settings items[-1].stats set value {damage:12.5, k
 #>-------------------
 
 #>-------------------
-#> crossbow.enable : bool
+#> crossbow.enable
+#: bool
 #-------------------
 #~ enable custom behavior of arrows shot by crossbows.
-#-------------------
-#- 
 #-------------------
  data modify storage mpweapons:settings crossbow.enable set value true
 #>-------------------
 
 #>-------------------
-#> crossbow.spread : {radius:{min: float, max: float}, magnitude:{min: float, max: float}}
+#> crossbow.spread
+#: {radius:{min: float, max: float}, magnitude:{min: float, max: float}}
 #-------------------
 #~ same as {mpweapons:settings -> bow.spread}, but for crossbow.
-#-------------------
-#- 
 #-------------------
  data modify storage mpweapons:settings crossbow.spread set value {radius:{min:0f, max:0f}, magnitude:{min:0f, max:0f}}
 #>-------------------
