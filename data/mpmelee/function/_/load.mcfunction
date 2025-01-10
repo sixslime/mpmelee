@@ -19,13 +19,7 @@ execute unless data storage mpmelee:settings {PERSIST:true} run function mpmelee
 # scoreboards
 scoreboard objectives add -mpmelee dummy
 scoreboard objectives add --mpmelee dummy
-scoreboard objectives add _mpmelee-use_bow minecraft.used:minecraft.bow
-scoreboard objectives add _mpmelee-use_crossbow minecraft.used:minecraft.crossbow
 #scoreboard objectives add mpmelee-scoreboard dummy
 
 # cache
 function mpmelee:_/cache/generate
-
-# tick
-schedule clear mpmelee:_/tick
-function mpmelee:_/tick
